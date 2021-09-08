@@ -20,15 +20,15 @@ public class TestController {
         return "/test/test";
     }
 
-    @ModelAttribute("userDto")
-    public UserDto setUserDto() {
-        return new UserDto();
-    }
-
-    @RequestMapping(value = "/test2", method = RequestMethod.POST)
-    public String reg(@ModelAttribute("userDto") UserDto userDto){
-        System.out.println(userDto.getLogin() + " " + userDto.getPassword() + " " + userDto.getGender() + " " + userDto.getSubscription());
-        return "main";
-    }
+//    @ModelAttribute("userDto")
+//    public UserDto setUserDto() {
+//        return new UserDto();
+//    }
+//
+//    @RequestMapping(value = "/test2", method = RequestMethod.POST)
+//    public String reg(@ModelAttribute("userDto") UserDto userDto){
+//        System.out.println(userDto.getLogin() + " " + userDto.getPassword() + " " + userDto.getGender() + " " + userDto.getSubscription());
+//        return "main";
+//    }
 
 }

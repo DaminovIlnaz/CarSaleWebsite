@@ -25,7 +25,9 @@
     </form>
 
     <p>_____W A Y 2_____</p>
-    <form:form action="/carSaleWebsite_war_exploded/test2"
+    <c:if test="${not empty message}"><div class="message green">${message}</div></c:if>
+
+    <form:form action="/carSaleWebsite_war_exploded/reg"
                method="post" modelAttribute="userDto">
         <form:input path="login"/>
         <form:password path="password"/>
